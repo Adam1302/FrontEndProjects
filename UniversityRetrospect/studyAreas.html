@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniversityRetrospect | Study Areas</title>
+    <!--A stylesheet with some nice icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+    <!--CSS File-->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!--Header-->
+
+    <header class="header" id="header"> <!--ID is included for JS to be able to select this element-->
+        <nav class="nav container"> <!--Container will limit how wide nav element will go-->
+            <a href="./studyAreas.html" class="logo-box">
+                <img src="./photos/University_of_Waterloo_seal.svg.png" alt="UW Logo" class="logo-image">
+            </a>
+
+            <div class="menu" id="mobile-menu"> <!--This will be our navbar-->
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="./index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./studyAreas.html" class="nav-link">Places to Study</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./tools.html" class="nav-link">Tools & Equipment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./contact.html" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item lg-screen-hidden">
+                        <a href="./account.html" class="nav-link">Account</a>
+                    </li>
+                </ul>
+
+                <div class="menu-toggle-icon menu-toggle-close" id="menu-toggle-close">
+                    <i class="ri-close-line"> <!--i indicates some text that is different than normal text-->
+                    </i>
+                </div>
+            </div>
+
+            <a href="./account.html" class="nav-link account-link place-items-center sm-screen-hidden">
+                <i class="ri-account-circle-line"></i> Account
+            </a>
+
+            <div class="menu-toggle-icon menu-toggle-open" id="menu-toggle-open">
+                <i class="ri-menu-4-fill"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!--Body-->
+
+<main class="class">
+    <section class="hero">
+        <div class="hero-container container d-grid">
+            <div class="hero-data" id="hero-data">
+                <span class="tagline">A Guide</span>
+                <h1 class="title main-title">My Favourite Places to Study on Campus</h1>
+                <a href="#pic-1" class="btn btn-scroll-down">
+                    Scroll Down
+                    <i class="ri-arrow-down-line"></i>
+                </a>
+            </div>
+        </div>
+<!--
+        <img src="./photos/campus-aerial-east-side.jpeg" alt="" class="main-img" id="sky-view">
+-->
+        <div class="main-img" id="studying"></div>
+
+    </section>
+
+    
+</main>
+
+<section class="cs-information section" id="cs-information">
+    <div class="card-container container">
+        <div class="card d-grid"> <!--Individual cards-->
+            <img src="./photos/davis_centre.jpg" alt="" class="card-image frame-position-center" id="pic-1">
+
+            <div class="card-info">
+                <span class="count">01</span>
+                <span class="tagline">Place 1</span>
+                <h2 class="title card-title">DC Library</h2>
+                <p class="card-description">It's the go-to study space for a reason. The DC is lined with comfortable yet efficiently-spaced seating, strong wi-fi, adequate privacy, and low noise levels.</p>
+                <a href="https://lib.uwaterloo.ca/web/" class="btn btn-accent">
+                    Read more <i class="ri-arrow-right-line"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="card d-grid"> <!--Individual cards-->
+            <img src="./photos/math_and_computer_building_1.jpg" alt="" class="card-image frame-position-center order-first">
+
+            <div class="card-info">
+                <span class="count">02</span>
+                <span class="tagline">Place 2</span>
+                <h2 class="title card-title">MC 5th and 6th Floors</h2>
+                <p class="card-description">When you're in need of a more quiet and pesonal area, head on up to the upper floors of the MC. Mainly for faculty and grad students, the floors are quiet but have lots of great study spaces. I guess people really don't want to climb stairs...</p>
+                <a href="https://uwaterloo.ca/accessibility/getting-around/building-accessibility/mathematics-and-computer-mc" class="btn btn-accent">
+                    Read more <i class="ri-arrow-right-line"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="card d-grid"> <!--Individual cards-->
+            <img src="./photos/1._South_west_view_copyright_Doublespace_Photography.jpg" alt="" class="card-image frame-position-center">
+
+            <div class="card-info">
+                <span class="count">03</span>
+                <span class="tagline">Place 3</span>
+                <h2 class="title card-title">Quantum Nano Centre</h2>
+                <p class="card-description">The QNC is an open-concept building with a couple of my favourite go-to's when I'm not in the mood to study. First of all, the 2nd floor's standing desk is a great option when you've been sitting all-day and need to move around. As well, when your not in the quiet-studying mood, the QNC's basement has some nice seats next to a piano which you'll often find UWaterloo students practicing on. It can be a much more rewarding and beautiful distraction than the YouTube wormhole.</p>
+                <a href="https://uwaterloo.ca/institute-nanotechnology/research-waterloo-institute-nanotechnology/facilities-equipment/quantum-nano-centre" class="btn btn-accent">
+                    Read more <i class="ri-arrow-right-line"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!--Footer-->
+<div class="footer-container container d-grid">
+    <div class="brand-information">
+        <span class="copyright">&copy; 2022 Adam Abdulhamid. All rights reserved <i class="ri-bear-smile-fill"></i></span>
+    </div>
+</div>
+
+    <!--JavaScript File-->
+    <script src="./main.js"></script>
+</body>
+</html>

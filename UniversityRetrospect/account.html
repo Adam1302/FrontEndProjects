@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniversityRetrospect | Account</title>
+    <!--A stylesheet with some nice icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+    <!--CSS File-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header" id="header"> <!--ID is included for JS to be able to select this element-->
+        <nav class="nav container"> <!--Container will limit how wide nav element will go-->
+            <a href="./account.html" class="logo-box">
+                <img src="./photos/pencil-ga3a83e863_640.png" alt="UW Logo" class="logo-image">
+            </a>
+
+            <div class="menu" id="mobile-menu"> <!--This will be our navbar-->
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="./index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./studyAreas.html" class="nav-link">Places to Study</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./tools.html" class="nav-link">Tools & Equipment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./contact.html" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item lg-screen-hidden">
+                        <a href="./account.html" class="nav-link">Account</a>
+                    </li>
+                </ul>
+
+                <div class="menu-toggle-icon menu-toggle-close" id="menu-toggle-close">
+                    <i class="ri-close-line"> <!--i indicates some text that is different than normal text-->
+                    </i>
+                </div>
+            </div>
+
+            <a href="./account.html" class="nav-link account-link place-items-center sm-screen-hidden">
+                <i class="ri-account-circle-line"></i> Account
+            </a>
+
+            <div class="menu-toggle-icon menu-toggle-open" id="menu-toggle-open">
+                <i class="ri-menu-4-fill"></i>
+            </div>
+        </nav>
+    </header>
+
+        <main class="class">
+            <section class="account-area">
+                    <form class="form" id="login">
+                        <h1 class="form-title">Login</h1>
+                        <div class="form-msg form-msg-error"></div>
+                        <div class="form-input-group">
+                            <input type="text" class="form-input" autofocus placeholder="Username">
+                            <div class="form-input-error-msg"></div>
+                        </div>
+                        <div class="form-input-group">
+                            <input type="password" class="form-input" autofocus placeholder="Password">
+                            <div class="form-input-error-msg"></div>
+                        </div>
+            
+                        <div class="form-button-parent">
+                            <button class="form-button">
+                                Submit (storage not implemented)
+                            </button>
+                        </div>
+            
+                        <p class="form-text">
+                            <a id="linkCreateAccount" href="./" class="form-link">Don't have an account? Create one.</a>
+                        </p>
+                    </form>
+            
+                    <form class="form form-hidden" id="createAccount">
+                        <h1 class="form-title">Create Account</h1>
+                        <div class="form-msg form-msg-error"></div>
+                        <div class="form-input-group">
+                            <input type="text" class="form-input" autofocus placeholder="Username">
+                            <div class="form-input-error-msg"></div>
+                        </div>
+                        <div class="form-input-group">
+                            <input type="email" class="form-input" autofocus placeholder="Email Address">
+                            <div class="form-input-error-msg"></div>
+                        </div>
+                        <div class="form-input-group">
+                            <input type="password" class="form-input" autofocus placeholder="Password" id="signupPassword">
+                            <div class="form-input-error-msg"></div>
+                        </div>
+                        <div class="form-input-group">
+                            <input type="password" class="form-input" autofocus placeholder="Confirm Password" id="confirmPassword">
+                            <div class="form-input-error-msg"></div>
+                        </div>
+            
+                        <button class="form-button">
+                            Create
+                        </button>
+            
+                        <p class="form-text">
+                            <a id="linkLogin" href="./" class="form-link">Already have an account? Log in</a>
+                        </p>
+                    </form>
+            </section>
+        </main>
+    
+        <script src="./account.js"></script>
+        <script src="./main.js"></script>
+</body>
+</html>

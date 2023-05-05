@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniversityRetrospect | Helpful Tools</title>
+    <!--A stylesheet with some nice icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+    <!--CSS File-->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!--Header-->
+
+    <header class="header" id="header"> <!--ID is included for JS to be able to select this element-->
+        <nav class="nav container"> <!--Container will limit how wide nav element will go-->
+            <a href="./tools.html" class="logo-box">
+                <img src="./photos/114-1146591_tools-png-transparent-image-transparent-background-tool-icon-removebg-preview.png" alt="UW Logo" class="logo-image">
+            </a>
+
+            <div class="menu" id="mobile-menu"> <!--This will be our navbar-->
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="./index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./studyAreas.html" class="nav-link">Places to Study</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./tools.html" class="nav-link">Tools & Equipment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./contact.html" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item lg-screen-hidden">
+                        <a href="./account.html" class="nav-link">Account</a>
+                    </li>
+                </ul>
+
+                <div class="menu-toggle-icon menu-toggle-close" id="menu-toggle-close">
+                    <i class="ri-close-line"> <!--i indicates some text that is different than normal text-->
+                    </i>
+                </div>
+            </div>
+
+            <a href="./account.html" class="nav-link account-link place-items-center sm-screen-hidden">
+                <i class="ri-account-circle-line"></i> Account
+            </a>
+
+            <div class="menu-toggle-icon menu-toggle-open" id="menu-toggle-open">
+                <i class="ri-menu-4-fill"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!--Body-->
+
+<main class="class">
+    <section class="hero">
+        <div class="hero-container container d-grid">
+            <div class="hero-data" id="hero-data">
+                <span class="tagline">A Supply List</span>
+                <h1 class="title main-title">Essential Tools & Supplies for CS Majors</h1>
+                <a href="#pic-1" class="btn btn-scroll-down">
+                    Scroll Down
+                    <i class="ri-arrow-down-line"></i>
+                </a>
+            </div>
+        </div>
+<!--
+        <img src="./photos/campus-aerial-east-side.jpeg" alt="" class="main-img" id="sky-view">
+-->
+        <div class="main-img" id="supplies"></div>
+
+    </section>
+
+    
+</main>
+
+<section class="cs-information section" id="cs-information">
+    <div class="card-container container">
+        <div class="card d-grid"> <!--Individual cards-->
+            <img src="./photos/pexels-pixabay-461064.jpg" alt="" class="card-image frame-position-center" id="pic-1">
+
+            <div class="card-info">
+                <span class="count">01</span>
+                <span class="tagline">Tool 1</span>
+                <h2 class="title card-title">Reliable and Lightweight Laptop</h2>
+                <p class="card-description">As a CS major, you'll be carrying your laptop with you everywhere you go, and for tasks much more demanding than writing text documents. A reliable, lightweight laptop is a well-worthy investment for your university journey.</p>
+                <a href="https://www.ofzenandcomputing.com/best-laptops-for-computer-science-students/" class="btn btn-accent">
+                    Read more <i class="ri-arrow-right-line"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="card d-grid"> <!--Individual cards-->
+            <img src="./photos/pexels-karolina-grabowska-4476371.jpg" alt="" class="card-image frame-position-center order-first">
+
+            <div class="card-info">
+                <span class="count">02</span>
+                <span class="tagline">Tool 2</span>
+                <h2 class="title card-title">Daily Planner</h2>
+                <p class="card-description">Amidst the business of university life, it will quickly get difficult to keep track of your tasks in your head. Write out your tasks as soon as you receive them to better plan your time and organize your days.</p>
+                <a href="https://www.youtube.com/watch?v=fRTaOqiTq9c" class="btn btn-accent">
+                    Read more <i class="ri-arrow-right-line"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="card d-grid"> <!--Individual cards-->
+            <img src="./photos/pexels-antonio-batinić-4164418.jpg" alt="" class="card-image frame-position-center">
+
+            <div class="card-info">
+                <span class="count">03</span>
+                <span class="tagline">Tool 3</span>
+                <h2 class="title card-title">Versatile IDE</h2>
+                <p class="card-description">Download and familiarize yourself with a good IDE. Not only will this save you a ton of compiler-related headaches in the future, but it is also a great help for coursework, projects, and interviews.</p>
+                <a href="https://www.keycdn.com/blog/best-ide" class="btn btn-accent">
+                    Read more <i class="ri-arrow-right-line"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!--Footer-->
+<div class="footer-container container d-grid">
+    <div class="brand-information">
+        <span class="copyright">&copy; 2022 Adam Abdulhamid. All rights reserved <i class="ri-bear-smile-fill"></i></span>
+    </div>
+</div>
+
+    <!--JavaScript File-->
+    <script src="./main.js"></script>
+</body>
+</html>

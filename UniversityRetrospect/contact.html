@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniversityRetrospect | Contact</title>
+    <!--A stylesheet with some nice icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+    <!--CSS File-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header" id="header"> <!--ID is included for JS to be able to select this element-->
+        <nav class="nav container"> <!--Container will limit how wide nav element will go-->
+            <a href="./contact.html" class="logo-box">
+                <img src="./photos/contact-phone-icon-4.png" alt="UW Logo" class="logo-image">
+            </a>
+
+            <div class="menu" id="mobile-menu"> <!--This will be our navbar-->
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="./index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./studyAreas.html" class="nav-link">Places to Study</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./tools.html" class="nav-link">Tools & Equipment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./contact.html" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item lg-screen-hidden">
+                        <a href="./account.html" class="nav-link">Account</a>
+                    </li>
+                </ul>
+
+                <div class="menu-toggle-icon menu-toggle-close" id="menu-toggle-close">
+                    <i class="ri-close-line"> <!--i indicates some text that is different than normal text-->
+                    </i>
+                </div>
+            </div>
+
+            <a href="./account.html" class="nav-link account-link place-items-center sm-screen-hidden">
+                <i class="ri-account-circle-line"></i> Account
+            </a>
+
+            <div class="menu-toggle-icon menu-toggle-open" id="menu-toggle-open">
+                <i class="ri-menu-4-fill"></i>
+            </div>
+        </nav>
+    </header>
+
+        <main class="class">
+            <div class="contact-container section">
+                <h2 class="title">Contact and Resources</h2>
+                <p>Please reach out to me at adam.abdulhamid@outlook.com</p>
+                <p>
+                    This website was created with the help of the following resources:
+                    <ul class="resource-list">
+                        <li><a href="https://www.youtube.com/watch?v=3-t3Zmtsvb8" target="_blank" class="btn btn-accent">Website Design Tutorial</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=3GsKEtBcGTk" target="_blank" class="btn btn-accent">Login Form Tutorial</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=mU6anWqZJcc&ab_channel=freeCodeCamp.org" target="_blank" class="btn btn-accent">HTML/CSS Tutorial</a></li>
+                    </ul>
+                </p>
+            </div>
+        </main>
+    
+        <script src="./main.js"></script>
+</body>
+</html>

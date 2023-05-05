@@ -1,0 +1,93 @@
+:root {
+    --clr-light: #EFEFEF;
+    --clr-light-offset: #C9C1A9;
+    --clr-dark: #230903;
+    --clr-dark-offset: #01295F;
+    --clr-theme: #FDE25C;
+    --font-title: "Sofia", 'Times New Roman', Times, serif;
+    --font-body: "Open Sans", sans-serif;
+    --basic-transition: all .25s ease-out;
+    --border-radius: 4%;
+}
+
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: var(--clr-light-offset);
+
+    line-height: 1.3em;
+    font-size: 125%;
+
+    display: grid;
+    align-items: center;
+    justify-items: center;
+
+    font-family: var(--font-body);
+}
+
+.container {
+    width: 81vw;
+    max-width: 50rem;
+
+    border-radius: var(--border-radius);
+    background: var(--clr-light);
+
+}
+
+.btn-list {
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* fr: fraction, so we're allocating each column 1 fractional unit of the total space. the fraction depends on the # of units we allocate */
+}
+
+.btn {
+    background: var(--clr-theme);
+    border: none;
+
+    width: 100%;
+    padding: 1rem;
+
+    cursor: pointer;
+    transition: var(--basic-transition);
+
+    justify-self: center;
+
+    font-size: 1.25em;
+}
+
+.btn:first-child /* 1st child */ {
+    border-top-left-radius: var(--border-radius);
+}
+
+.btn:last-child /* 1st child */ {
+    border-top-right-radius: var(--border-radius);
+}
+
+.btn:hover:not(.btn-active) {
+    background: var(--clr-light-offset);
+    color: var(--clr-dark-offset);
+}
+
+.btn-active {
+    background: transparent;
+    cursor: auto;
+}
+
+p {
+    width: 80%;
+
+    margin: 10%;
+}
+
+.content:not(.active) {
+    display: none;
+}

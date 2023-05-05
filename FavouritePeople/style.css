@@ -1,0 +1,118 @@
+:root {
+    --clr-light: #efefef;
+    --clr-light-offset: #bcbcbc;
+    --clr-dark: #232323;
+    --clr-dark-offset: #565656;
+    --clr-theme: red;
+    --font-title: Georgia, 'Times New Roman', Times, serif;
+}
+
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: var(--clr-light-offset);
+
+    line-height: 1.3em;
+    font-size: 125%;
+
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.container {
+    text-align: center;
+}
+
+.profile {
+    position: relative;
+
+    display: grid;
+    align-items: center;
+    justify-items: center;
+
+    background: var(--clr-light);
+    min-height: 30rem;
+
+    padding: 1rem;
+    margin: 2rem;
+    border-radius: 15%;
+}
+
+.title {
+    font-family: var(--font-title);
+    text-transform: capitalize;
+    color: var(--clr-dark);
+    margin: 5px;
+}
+
+img {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 100%;
+    box-shadow: 5px 1px 6px var(--clr-theme);
+
+    object-fit: cover;
+}
+
+#role {
+    text-transform: uppercase;
+    color: var(--clr-theme);
+}
+
+.description {
+    margin: 6px;
+
+    color: var(--clr-dark-offset);
+    text-align: center;
+}
+
+.btn {
+    position: absolute;
+    bottom: 4px;
+
+    height: 2rem;
+    width: 2rem;
+
+    border: none;
+    background: var(--clr-light);
+
+    transition: all 0.2s ease-out;
+}
+
+.btn:hover {
+    background: var(--clr-light-offset);
+}
+
+#left-btn {
+    transform: translateX(-2rem);
+}
+
+.fa-solid {
+    font-size: 1.2rem;
+}
+
+@media screen and (min-width: 56rem)  {
+
+    .profile {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+    
+        background: var(--clr-light);
+        height: 30rem;
+        width: 50rem;
+    
+        padding: 1rem;
+        margin: 2rem;
+        border-radius: 15%;
+    }
+    
+}

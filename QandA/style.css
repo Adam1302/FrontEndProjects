@@ -1,0 +1,129 @@
+:root {
+    --clr-light: #efefef;
+    --clr-light-offset: #dcdcdc;
+    --clr-dark: #554592;
+    --clr-dark-offset: #724CF9;
+    --clr-theme: #CA7DF9;
+    --font-title: 'Aboreto', cursive;
+    --font-body: 'Raleway', sans-serif;
+    --basic-transition: all .25s ease-out;
+}
+
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: var(--clr-light-offset);
+
+    line-height: 1.3em;
+    font-size: 125%;
+    /*
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    */
+    font-family: var(--font-body);
+}
+
+.container {
+    max-width: 90vw;
+    margin: 0 auto;
+}
+
+.title {
+    text-align: center;
+
+    margin-top: 12vh;
+    margin-bottom: 5rem;
+    text-transform: capitalize;
+
+    color: var(--clr-theme);
+
+    font-family: var(--font-title);
+    font-size: 2em;
+}
+
+.qa-container {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 996px;
+}
+
+article {
+    margin: 3rem 0;
+    padding: 1rem 1rem 0rem 1rem;
+
+    border-radius: 5%;
+
+    background: var(--clr-light);
+}
+
+.btn {
+    display: inline-block;
+    /*
+    position: relative;
+    right: 5px;*/
+
+    background: transparent;
+    color: var(--clr-theme);
+    border: none;
+    border-radius: 25%;
+
+    transition: var(--basic-transition);
+    cursor: pointer;
+
+    font-size: 1.5rem;
+
+}
+
+.btn:hover {
+    background-color: var(--clr-light-offset);
+}
+
+.q-area {
+    color: var(--clr-dark);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1rem 0rem;
+
+    font-size: 1.75rem;
+}
+
+.question {
+    padding: 0 1rem;
+}
+
+ul {
+    position: relative;
+    left: 2rem;
+}
+
+.a-area {
+    display: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.8);
+
+    color: var(--clr-dark-offset);
+}
+.show-text .a-area {
+    display: block;
+
+    padding: 1.5rem 0;
+}
+.minus-btn {
+    display: none;
+}
+.show-text .minus-btn {
+    display: inline;
+}
+.show-text .plus-btn {
+    display: none;
+}

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniversityRetrospect | Landing Page</title>
+    <!--A stylesheet with some nice icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+    <!--CSS File-->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!--Header-->
+
+    <header class="header" id="header"> <!--ID is included for JS to be able to select this element-->
+        <nav class="nav container"> <!--Container will limit how wide nav element will go-->
+            <a href="./index.html" class="logo-box">
+                <img src="./photos/University_of_Waterloo_seal.svg.png" alt="UW Logo" class="logo-image">
+            </a>
+
+            <div class="menu" id="mobile-menu"> <!--This will be our navbar-->
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="./index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./studyAreas.html" class="nav-link">Places to Study</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./tools.html" class="nav-link">Tools & Equipment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./contact.html" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item lg-screen-hidden">
+                        <a href="./account.html" class="nav-link">Account</a>
+                    </li>
+                </ul>
+
+                <div class="menu-toggle-icon menu-toggle-close" id="menu-toggle-close">
+                    <i class="ri-close-line"> <!--i indicates some text that is different than normal text-->
+                    </i>
+                </div>
+            </div>
+
+            <a href="./account.html" class="nav-link account-link place-items-center sm-screen-hidden">
+                <i class="ri-account-circle-line"></i> Account
+            </a>
+
+            <div class="menu-toggle-icon menu-toggle-open" id="menu-toggle-open">
+                <i class="ri-menu-4-fill"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!--Body-->
+
+<main class="class">
+    <section class="hero">
+        <div class="hero-container container d-grid">
+            <div class="hero-data" id="hero-data">
+                <span class="tagline">A Retrospect</span>
+                <h1 class="title main-title">What I've Learned Throughout my University Journey</h1>
+                <a href="#pic-1" class="btn btn-scroll-down">
+                    Scroll Down
+                    <i class="ri-arrow-down-line"></i>
+                </a>
+            </div>
+        </div>
+<!--
+        <img src="./photos/campus-aerial-east-side.jpeg" alt="" class="main-img" id="sky-view">
+-->
+        <div class="main-img" id="sky-view"></div>
+
+    </section>
+
+    
+</main>
+
+<section class="cs-information section" id="cs-information">
+    <div class="card-container container">
+        <div class="card d-grid"> <!--Individual cards-->
+            <img src="./photos/cheriton-school-computer-science.jpeg" alt="" class="card-image frame-position-center" id="pic-1">
+
+            <div class="card-info">
+                <span class="count" id="advice-1">01</span>
+                <span class="tagline">Learning 1</span>
+                <h2 class="title card-title">Every Expert Was Once A Beginner</h2>
+                <p class="card-description">In a program as rigorous and reputable as UWaterloo's Computer Science, it is easy to feel unworthy and incompotent in face of difficult content and well-accomplished peers. However, through experience I've learned that, not only is humility a necessity to improve, but it also yields the best results. Use your fears and nerves to motivate yourself to put extra effort into learning (the right way), and you'll find yourself better off in the long run. After all, as Epictetus said, "It is impossible for one to learn what he thinks he already knows.”</p>
+                <a href="https://www.youtube.com/watch?v=HTdOhPnQ19U" class="btn btn-accent" target="_blank">
+                    Read more <i class="ri-arrow-right-line"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="card d-grid"> <!--Individual cards-->
+            <img src="./photos/pexels-william-choquette-1954524.jpg" alt="" class="card-image frame-position-center order-first">
+
+            <div class="card-info">
+                <span class="count">02</span>
+                <span class="tagline">Learning 2</span>
+                <h2 class="title card-title">Take Care of your Body</h2>
+                <p class="card-description">Academic success at the expense of health and well-being is no success at all. While it may seem tempting for short-term rewards, sacrificing well-being always has a cascading downwards effect. Exercise and a healthy diet have long been known to enhance academic performance and overall mood, and will increase the payoff of your degree's hard-work in the future.</p>
+                <a href="https://www.youtube.com/watch?v=BHY0FxzoKZE" class="btn btn-accent" target="_blank">
+                    Read more <i class="ri-arrow-right-line"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="card d-grid"> <!--Individual cards-->
+            <img src="./photos/pexels-pixabay-159213.jpg" alt="" class="card-image frame-position-center">
+
+            <div class="card-info">
+                <span class="count">03</span>
+                <span class="tagline">Learning 3</span>
+                <h2 class="title card-title">Minimize Distractions</h2>
+                <p class="card-description">Working on stressful and overwhelming tasks on your computer every day makes it extremely difficult to build the "discipline" that other successful students have. Thus, it's best to be proactive; leave your apartment, block distracting sites, turn off your phone... these simple actions can save a lot of regret and struggle, and will maximize your speed and efficiency.</p>
+                <a href="https://www.youtube.com/watch?v=njDLNt-1ugM" class="btn btn-accent" target="_blank">
+                    Read more <i class="ri-arrow-right-line"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="card d-grid"> <!--Individual cards-->
+            <img src="./photos/pexels-north-1407322.jpg" alt="" class="card-image frame-position-center order-first">
+
+            <div class="card-info">
+                <span class="count">04</span>
+                <span class="tagline">Learning 4</span>
+                <h2 class="title card-title">Make Time for Hobbies</h2>
+                <p class="card-description">The word <strong>make</strong> here is essential. UW CS wil eat up every second of time you give it. Unless coding is your hobby and passion, devoting every second of the day to your studies will inevitably lead to burn out and a strong dissatisfaction with your life. Instead, to maintain strong mental health in the long-term, devote time, at least 30 minutes a day, to something you find fun or meaningful. Again, your program and marks are not more valuable than your own well-being.</p>
+                <a href="https://www.youtube.com/watch?v=aodYwALBM2E" class="btn btn-accent" target="_blank">
+                    Read more <i class="ri-arrow-right-line"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="card d-grid"> <!--Individual cards-->
+            <img src="./photos/pexels-jules-amé-4078343.jpg" alt="" class="card-image frame-position-center">
+
+            <div class="card-info">
+                <span class="count">05</span>
+                <span class="tagline">Learning 5</span>
+                <h2 class="title card-title">Adopt a Growth-based Mindset</h2>
+                <p class="card-description">Surrounded by some of the smartest and most well-accomplished people I've ever met, I constantly felt inadequate and unhappy duirng my first two years in the program. However, rather than comparison to others, whether it be status, knowledge, or marks, the only worthy subject for comparison is yourself. I have felt far more at ease and seen far greater improvements after adopting a growth-based mindset in which my goals are not qualitative or external; rather, they lie completely within myself and my learning.</p>
+                <a href="https://www.youtube.com/watch?v=hiiEeMN7vbQ" class="btn btn-accent" target="_blank">
+                    Read more <i class="ri-arrow-right-line"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!--Footer-->
+<div class="footer-container container d-grid">
+    <div class="brand-information">
+        <span class="copyright">&copy; 2022 Adam Abdulhamid. All rights reserved <i class="ri-bear-smile-fill"></i></span>
+    </div>
+</div>
+
+    <!--JavaScript File-->
+    <script src="./main.js"></script>
+</body>
+</html>

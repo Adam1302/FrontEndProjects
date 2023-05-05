@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Sign Up Form</title>
+    <link rel="shortcut icon" href="/assets/favicon.ico">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <form class="form" id="login">
+            <h1 class="form-title">Login</h1>
+            <div class="form-msg form-msg-error"></div>
+            <div class="form-input-group">
+                <input type="text" class="form-input" autofocus placeholder="Username">
+                <div class="form-input-error-msg"></div>
+            </div>
+            <div class="form-input-group">
+                <input type="password" class="form-input" autofocus placeholder="Password">
+                <div class="form-input-error-msg"></div>
+            </div>
+
+            <button class="form-button">
+                Submit
+            </button>
+
+            <p class="form-text">
+                <a href="#" class="form-link">Forgot your password?</a>
+            </p>
+            <p class="form-text">
+                <a id="linkCreateAccount" href="./" class="form-link">Don't have an account? Create one.</a>
+            </p>
+        </form>
+
+        <form class="form form-hidden" id="createAccount">
+            <h1 class="form-title">Create Account</h1>
+            <div class="form-msg form-msg-error"></div>
+            <div class="form-input-group">
+                <input type="text" class="form-input" autofocus placeholder="Username">
+                <div class="form-input-error-msg"></div>
+            </div>
+            <div class="form-input-group">
+                <input type="email" class="form-input" autofocus placeholder="Email Address">
+                <div class="form-input-error-msg"></div>
+            </div>
+            <div class="form-input-group">
+                <input type="password" class="form-input" autofocus placeholder="Password" id="signupPassword">
+                <div class="form-input-error-msg"></div>
+            </div>
+            <div class="form-input-group">
+                <input type="password" class="form-input" autofocus placeholder="Confirm Password" id="confirmPassword">
+                <div class="form-input-error-msg"></div>
+            </div>
+
+            <button class="form-button">
+                Create
+            </button>
+
+            <p class="form-text">
+                <a id="linkLogin" href="./" class="form-link">Already have an account? Log in</a>
+            </p>
+        </form>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>

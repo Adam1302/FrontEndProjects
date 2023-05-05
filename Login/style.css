@@ -1,0 +1,139 @@
+body {
+    --color-primary: #84A98C;
+    --color-primary-dark: #52796F;
+    --color-secondary: #354F52;
+    --color-error: #2F3E46;
+;
+    --color-success: #CAD2C5;
+
+    --border-radius: 0.3rem; /* border of container and input boxes */
+
+    margin: 0;
+
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background: var(--color-primary);
+}
+
+.container {
+    width: 400px;
+    max-width: 400px;
+
+    margin: 1rem;
+    padding: 2rem;
+
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    border-radius: var(--border-radius);
+    background: white;
+}
+
+.container,
+.form-input,
+.form-button {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 500;
+}
+
+.form-hidden {
+    display: none;
+}
+
+.form > *:first-child {
+    margin-top: 0; /* don't want extra margins to be visible at top and bottom of box */
+}
+
+.form > *:last-child {
+    margin-bottom: 0;
+}
+
+.form-msg {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.form-message-success {
+    color: var(--color-success)
+}
+
+.form-msg-error {
+    color: var(--color-error)
+}
+
+.form-title {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.form-input-group {
+    margin-bottom: 1rem; /* space between input fields */
+}
+
+.form-input {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    border-radius: var(--border-radius);
+    border: 2px solid white;
+    outline: none;
+    background: #dddddd;
+
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.form-input:focus { /* triggered when the user clicks or taps on an element */
+    border-color: var(--color-primary);
+    background: white;
+}
+
+.form-input-error {
+    color: var(--color-error);
+    border-color: var(--color-error);
+}
+
+.form-input-error-msg {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+}
+
+.form-button {
+    width: 100%;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    outline: none;
+    cursor: pointer;
+    background: var(--color-primary);
+}
+
+.form-button:hover { /* hovering over button */
+    background: var(--color-primary-dark);
+}
+
+.form-button:active { /* clicking on button */
+    transform: scale(0.99);
+}
+
+.form-text {
+    text-align: center;
+}
+
+.form-link {
+    color: var(--color-secondary);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.form-link:hover {
+    text-decoration: underline;
+}
+
+.form-link:active {
+    background: #dddddd;
+}

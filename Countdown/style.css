@@ -1,0 +1,95 @@
+:root {
+    --clr-light: #EFEFEF;
+    --clr-light-offset: #bfeaf7;
+    --clr-dark: #230903;
+    --clr-dark-offset: #01295F;
+    --clr-theme: #FDE25C;
+    --font-title: "Sofia", 'Times New Roman', Times, serif;
+    --font-body: "Open Sans", sans-serif;
+    --basic-transition: all .25s ease-out;
+    --border-radius: 4%;
+}
+
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: var(--clr-light-offset);
+
+    line-height: 1.3em;
+    font-size: 125%;
+
+    display: grid;
+    align-items: center;
+    justify-items: center;
+
+    font-family: var(--font-body);
+}
+
+.container {
+
+    display: grid;
+    align-items: center;
+    justify-items: center;
+
+}
+
+.img {
+    width: 72vw;
+    max-width: 800px;
+    margin: 2rem 0;
+
+
+    justify-content: center;
+}
+
+img {
+    width: 100%;
+
+    border: 3px solid var(--clr-dark);
+    border-radius: 15%;
+}
+
+.info {
+    text-align: center;
+
+    margin: 0 15vw;
+}
+
+.info * {
+    margin: 14px;
+}
+
+.countdown-area {
+    display: flex;
+
+    margin-top: 1.25rem;
+}
+
+.countdown-item {
+    background: var(--clr-dark);
+    color: var(--clr-theme);
+
+    margin: 0 5px;
+    padding: 0px;
+
+    width: 8rem;
+    height: 8rem;
+    text-transform: uppercase;
+    
+    display: grid;
+    place-items: center;
+
+}
+
+.countdown-item h5 {
+    font-size: 3rem;
+
+    margin-bottom: 1rem;
+}
